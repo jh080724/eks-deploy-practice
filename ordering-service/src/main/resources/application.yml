@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ordering-service
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+

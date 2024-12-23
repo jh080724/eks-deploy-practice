@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+jasypt:
+  encryptor:
+    bean: jasyptEncryptor
+
+spring:
+  application:
+    name: user-service

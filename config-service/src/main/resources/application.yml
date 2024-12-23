@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+#          uri: git@github.com:jh080724/cloud-config-settings.git  # private Repo.
+          uri: https://github.com/jh080724/cloud-config-settings.git  # private Repo.
+          default-label: main
+          username: jh080724
+          password: ${GIT_PRIVATE_KEY}
